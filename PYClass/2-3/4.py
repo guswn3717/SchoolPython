@@ -1,0 +1,5 @@
+string =  input("인사말을 입력하세요> ")
+print(string)
+number =  input("숫자를 입력하세요> ")
+print(number)
+print(type(number))
