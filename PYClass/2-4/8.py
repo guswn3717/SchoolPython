@@ -1,4 +1,5 @@
-output_a = 52.0
-output_b = "{:g}".format(output_a)
-print (output_a)
-print (output_b)
+input_a= """
+    안녕하세요
+문자열의 함수를 알아봅니다
+	"""
+print(input_a.strip())

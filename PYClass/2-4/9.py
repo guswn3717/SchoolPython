@@ -1,3 +1,2 @@
-a = "Hello Python Programming...!" 
-print(a.upper())
-print(a.lower())
+print("TrainA10".isalnum())
+print("10".isdigit())

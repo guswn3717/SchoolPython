@@ -1,5 +1,4 @@
-input_a= """
-    안녕하세요
-문자열의 함수를 알아봅니다
-	"""
-print(input_a.strip())
+output_a= "안녕안녕하세요".find("안녕")
+print (output_a)
+output_b="안녕안녕하세요".rfind("안녕")
+print(output_b)
