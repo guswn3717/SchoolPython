@@ -1,0 +1,64 @@
+import numpy
+
+import numpy as np
+
+print(np.sqrt(2))
+
+print(np.pi)
+
+print(np.sin(np.pi/2))
+
+print(np.array([0, 1, 2, 3, 4, 5, 6,7, 8, 9]))
+print(np.arange(10))
+
+print(np.arange(0, 1, 0.1))
+
+print(np.linspace(0, 1, 10))
+
+import pandas as pd
+
+df = pd.read_csv("/content/seoul_temp.csv", encoding = 'cp949')
+
+df.head()
+
+df.describe()
+
+df.isnull()
+
+df.isnull().sum()
+
+df.fillna(0)
+
+df2 = df.fillna(method = 'bfill')
+df2
+
+df3 = df.fillna(method = 'ffill')
+df3
+
+df4 = df.dropna()
+df4
+
+df['년'].head()
+
+df[['년', '평균기온']].head()
+
+df[43:47]
+
+df['년'] = pd.to_numeric(df['년'], errors='coerce')
+
+df['년'] > 2000
+
+df[df['년'] > 2000].head()
+
+df[(df['년'] > 2000) & (df['평균기온'] > 13)]
+
+from sklearn.datasets import load_iris
+iris_dataset = load_iris()
+print(iris_dataset.keys())
+
+print(iris_dataset['feature_names'])
+print(iris_dataset['data'].shape)
+
+import pandas as pd
+iris_df = pd.DataFrame(iris_dataset['data'], columns = ['sepal length', 'sepal width', 'petal length', 'petal width'])
+iris_df.head()
